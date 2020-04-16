@@ -30,6 +30,11 @@
     ```
     $ sudo ./store-server ./config.env
 
+    # 或
+
+    $ sudo setcap cap_net_bind_service=+ep ./store-server
+    $ ./store-server ./config.env
+
     # 成功启动后会打印: 管理后台地址及小程序后台需要配置的相关服务器域名
     # 你可以使用nohup或其他工具让store-server在后台运行
     ```
