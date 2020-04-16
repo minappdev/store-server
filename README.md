@@ -12,17 +12,11 @@
 
 ## 如何部署
 
-1. 下载适用于Linux amd64的服务端
+1. 下载服务端
 
     ```
-    $ curl https://raw.githubusercontent.com/minappdev/store-server/master/store-server -o store-server
-    $ chmod +x store-server
-    ```
-
-2. 下载配置文件
-
-    ```
-    $ curl https://raw.githubusercontent.com/minappdev/store-server/master/config.env -o config.env
+    $ git clone https://github.com/minappdev/store-server.git
+    $ cd store-server
     ```
 
 3. 编辑config.env文件
@@ -34,7 +28,7 @@
 4. 启动服务端
 
     ```
-    $ ./store-server ./config.env
+    $ sudo ./store-server ./config.env
 
     # 成功启动后会打印: 管理后台地址及小程序后台需要配置的相关服务器域名
     # 你可以使用nohup或其他工具让store-server在后台运行
